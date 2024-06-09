@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
 
 $font-stack: "Montserrat", sans-serif;
+$font-display: "Sigmar One", sans-serif;
 
 * {
     margin: 0;
@@ -20,6 +22,10 @@ html, body {
     padding: 0 30px;
 }
 
+// img {
+//     max-width: 100%;
+// }
+
 a {
     text-decoration: none;
     text-transform: uppercase;
@@ -31,7 +37,6 @@ ul {
 
 h2 {
     text-transform: uppercase;
-    text-align: center;
     margin: 2rem 0;
 }
 
@@ -57,8 +62,130 @@ h2 {
     cursor: pointer;
 }
 
+//mainheader
+#mainheader {
+    background: url(/images/showcase.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    .navbar { 
+        width: 90%;
+        ul {
+            margin: 2rem 0;
+            float: right;
+            li {
+                display: inline-block;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    //showcase
+#showcase {
+
+ .showcase-content {
+   width: 80%;
+   margin: 0 auto;
+   margin-top: 15rem;
+   h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+   }
+   h1 {
+    font-size: 4.5rem;
+    font-family: $font-display;
+    margin-bottom: 1rem;
+   }
+ }
+}
+}
+
+//bookprev
+#bookPrev {
+    background: rgb(202, 202, 202);
+    .prev-row {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        gap: 100px;
+        .box {
+           text-align: center;
+           margin-bottom: 5rem;
+        }
+       
+            img {
+                width: 300px;
+                background: rgb(255, 0, 242);
+                padding: 50px;
+            }
+    }
+    
+}
+
+//author
+#author {
+   
+    margin-top: 4rem;
+    width: 80%;
+    margin: 0 auto;
+
+    .author-row {
+        display: flex;
+        margin-top: 5rem;
+        gap: 100px;
+    img {
+        width: 450px;
+    }
+    h4 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+    h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+    p {
+        line-height: 25px
+    }
+
+    }
+}
+
+//downlaod
+#download {
+    background: rgb(203, 20, 203);
+    .download-row {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        gap: 100px;
+        img {
+            margin: 5rem 0;
+            width:350px;
+        }
+        .downbook {
+            margin-top: 4rem;
+            text-align: left;
+            h2 {
+                font-weight: 400;
+            }
+            p {
+                margin-bottom: 3rem;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+
+
 //footer
 #footer {
     padding: 3rem 0;
     text-align: center;
+    background: #000;
 }
