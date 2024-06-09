@@ -115,9 +115,58 @@ h2 {
 }
 #bookPrev .prev-row img {
   width: 300px;
-  background: rgb(255, 0, 242);
+  background: rgb(242, 128, 237);
   padding: 50px;
   margin-bottom: 2rem;
+}
+#bookPrev .prev-row :nth-child(1) img:hover {
+  transform: rotate(10deg);
+}
+#bookPrev .prev-row :nth-child(2) img:hover {
+  transform: rotate(-10deg);
+}
+#bookPrev .prev-row :nth-child(3) img:hover {
+  animation-name: buzz-out-on-hover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes buzz-out-on-hover {
+  10% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.buzz-out-on-hover:hover, .buzz-out-on-hover:focus, .buzz-out-on-hover:active {
+  animation-name: buzz-out-on-hover;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
 }
 
 #author {
