@@ -29,6 +29,7 @@ html, body {
 a {
     text-decoration: none;
     text-transform: uppercase;
+    color: #000;
 }
 
 ul {
@@ -60,6 +61,11 @@ h2 {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: violet;
 }
 
 //mainheader
@@ -105,20 +111,26 @@ h2 {
 //bookprev
 #bookPrev {
     background: rgb(202, 202, 202);
+    h2 {
+        text-align: center;
+    }
     .prev-row {
         display: flex;
         width: 80%;
         margin: 0 auto;
         gap: 100px;
+        h3 {
+            font-weight: 400;
+        }
         .box {
            text-align: center;
            margin-bottom: 5rem;
         }
-       
             img {
                 width: 300px;
                 background: rgb(255, 0, 242);
                 padding: 50px;
+                margin-bottom: 2rem;
             }
     }
     
